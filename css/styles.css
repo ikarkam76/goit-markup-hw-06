@@ -17,6 +17,7 @@
     --work-list-border: #EEEEEE;
     --primary-icon-color: #AFB1B8;
     --footer-icon-join-bgc: rgba(255, 255, 255, 0.1);
+    --footrer-email-input-border: rgba(255, 255, 255, 0.3);
     --specific-item-tittle-bgc: rgba(47, 48, 58, 0.8);
     --overlay-bgc: rgba(33, 150, 243, 0.9);
     --modal-backdrop-bgc: rgba(0, 0, 0, 0.2);
@@ -28,6 +29,11 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+/* 
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+     */
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     
@@ -269,6 +275,7 @@ h1, h2, h3, p, ul {
     color: var(--footer-contact-text-color);
 }
 
+/* ---------join------- */
 
 .list-icon-join {
     display: flex;
@@ -310,6 +317,81 @@ h1, h2, h3, p, ul {
 
 .item-icon-join:not(:last-child) {
     margin-right: 10px;
+}
+
+
+/* --------form email-input----- */
+
+.email-input-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 570px;
+    height: 86px;
+    padding: 0;
+    margin-left: 93px;
+}
+
+.email-input-box {
+    display: flex;
+    flex-direction: column;
+    
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--primary-title-text-color);
+}
+
+.email-input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--footrer-email-input-border);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+
+
+    color: var(--primary-title-text-color);
+    background: var(--button-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+.send {
+    margin-left: 10px;
 }
 
 /* hero */
