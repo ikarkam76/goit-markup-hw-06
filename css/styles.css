@@ -24,6 +24,7 @@
     --timihg-function: cubic-bezier(0.4, 0, 0.2, 1);
     --modal-input-border: rgba(33, 33, 33, 0.2);
     --modal-comment-text: rgba(117, 117, 117, 0.5);
+    --button-send-hover-color: #188CE8;
 }
 
 body {
@@ -924,6 +925,7 @@ h1, h2, h3, p, ul {
 
 /* ------ form modal---- */
 
+
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
@@ -966,10 +968,57 @@ h1, h2, h3, p, ul {
 }
 
 .user-comment-input {
+    height: 120px;
     padding: 12px 16px;
     resize: none;
 
 
     border: 1px solid var(--modal-input-border);
     border-radius: 4px;
+}
+
+.checkbox-contract-marker {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-marker {
+}
+
+.user-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 8px;
+
+    color: var(--primary-text-color);
+}
+
+.link-contract {
+    color: var(--link-active-color);
+}
+
+.modal-send-button {
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-title-text-color);
+    background-color: var(--button-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--timihg-function);
+}
+
+.modal-send-button:hover,
+.modal-send-button:focus {
+    background-color: var(--button-send-hover-color);
 }

@@ -36,23 +36,27 @@
             <section class="section hero">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button hero-button" data-modal-open>Заказать услугу</button>
+
                 <div class="backdrop is-hidden" data-modal>
+
                     <div class="modal">
 
                         <form name="user-data" autocomplete="on" class="modal-form" >
+
                             <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
-                            <div class="modal-user-input-box">
+
+                            <div class="modal-user-input-box" role="group">
                                 <div class="modal-form-input">
                                     <label for="user-name" class="name modal-user-input">Имя</label>
-                                    <input id="user-name" type="name" class="user-input">
+                                    <input id="user-name" type="name" name="username" class="user-input">
                                 </div>
                                 <div class="modal-form-input">
                                     <label for="user-tel" class="tel modal-user-input">Телефон</label>
-                                    <input id="user-tel" type="tel" class="user-input">
+                                    <input id="user-tel" type="tel" name="tel" class="user-input" >
                                 </div>
                                 <div class="modal-form-input">
                                     <label for="user-email" class="email modal-user-input">Почта</label>
-                                    <input id="user-email" type="email" class="user-input">
+                                    <input id="user-email" type="email" name="email" class="user-input">
                                 </div>
                                 <div class="modal-form-input">
                                     <label for="user-comment" class="modal-user-input">Комментарий</label>
@@ -60,6 +64,12 @@
                                 </div>
                             </div>
 
+                            <div class="checkbox-contract-marker">
+                                <input type="checkbox" id="checkbox" class="checkbox-marker">
+                                <label for="checkbox" class="user-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="link-contract">Условия договора</a> </label>
+                            </div>
+
+                            <button type="submit" class="modal-send-button">Отправить</button>
 
                         </form>
                         
@@ -293,7 +303,7 @@
             <form name="email-input" autocomplete="on" class="email-input-form">
                 <div class="email-input-box">
                     <label for="subscription">Подпишитесь на рассылку</label>
-                    <input type="email" id="subscription" placeholder="E-mail" class="footer-email-input">
+                    <input type="email" id="subscription" name="email" placeholder="E-mail" class="footer-email-input">
                 </div>
 
                 <button type="submit" class="button send-button">Подписаться<svg class="send" width="24" height="24"><use href="./Images/icons.svg#send"></use></svg></button>
