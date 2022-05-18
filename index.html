@@ -45,24 +45,22 @@
 
                             <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
 
-                            <div class="modal-user-input-box" role="group">
-                                <div class="modal-form-input">
-                                    <label for="user-name" class="name modal-user-input">Имя</label>
-                                    <input id="user-name" type="name" name="username" class="user-input">
-                                </div>
-                                <div class="modal-form-input">
-                                    <label for="user-tel" class="tel modal-user-input">Телефон</label>
-                                    <input id="user-tel" type="tel" name="tel" class="user-input" >
-                                </div>
-                                <div class="modal-form-input">
-                                    <label for="user-email" class="email modal-user-input">Почта</label>
-                                    <input id="user-email" type="email" name="email" class="user-input">
-                                </div>
-                                <div class="modal-form-input">
-                                    <label for="user-comment" class="modal-user-input">Комментарий</label>
-                                    <textarea name="comment" id="user-comment" placeholder="Введите текст" class="user-comment-input"></textarea>
-                                </div>
-                            </div>
+                            <label class="modal-user-input">
+                                Имя
+                                <input type="name" name="username" class="user-input">
+                            </label>
+                            <label class="modal-user-input">
+                                Телефон
+                                <input type="tel" name="tel" class="user-input" >
+                            </label>
+                            <label class="modal-user-input">
+                                Почта
+                                <input type="email" name="email" class="user-input">
+                            </label>
+                            <label class="modal-user-input">
+                                Комментарий
+                                <textarea name="comment" placeholder="Введите текст" class="user-input user-comment-input"></textarea>
+                            </label>
 
                             <div class="checkbox-contract-marker">
                                 <input type="checkbox" id="checkbox" class="checkbox-marker">
