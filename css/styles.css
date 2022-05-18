@@ -978,8 +978,6 @@ h1, h2, h3, p, ul {
 }
 
 .checkbox-contract-marker {
-    display: flex;
-    align-items: center;
     margin-top: 20px;
 }
 
