@@ -1014,7 +1014,9 @@ h1, h2, h3, p, ul {
 
 
 .user-checkbox {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 
     font-size: 14px;
@@ -1066,6 +1068,7 @@ h1, h2, h3, p, ul {
     display: inline-block;
     width: 16px;
     height: 15px;
+    margin-right: 7px;
 
     border: 2px solid;
     border-radius: 4px;
