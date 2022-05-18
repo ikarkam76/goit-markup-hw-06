@@ -38,15 +38,32 @@
                 <button type="button" class="button hero-button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <img src="./Images/logo-school.png" alt="Логотип школы" height="48" width="auto">
-                        <p>В GoIT помогают построить историю успеха каждому. Если вы не можете выбрать направление – попробуйте свои силы на
-                        марафоне, онлайн-игре или мини-курсе. Приходите, чтобы разобраться в новых языках и трендах разработки, на практике
-                        узнать, как быть IT-шником и работать в самой перспективной сфере.
+
+                        <form name="user-data" autocomplete="on" class="modal-form" >
+                            <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+                            <div class="modal-user-input-box">
+                                <div class="modal-form-input">
+                                    <label for="user-name" class="name modal-user-input">Имя</label>
+                                    <input id="user-name" type="name" class="user-input">
+                                </div>
+                                <div class="modal-form-input">
+                                    <label for="user-tel" class="tel modal-user-input">Телефон</label>
+                                    <input id="user-tel" type="tel" class="user-input">
+                                </div>
+                                <div class="modal-form-input">
+                                    <label for="user-email" class="email modal-user-input">Почта</label>
+                                    <input id="user-email" type="email" class="user-input">
+                                </div>
+                                <div class="modal-form-input">
+                                    <label for="user-comment" class="modal-user-input">Комментарий</label>
+                                    <textarea name="comment" id="user-comment" placeholder="Введите текст" class="user-comment-input"></textarea>
+                                </div>
+                            </div>
+
+
+                        </form>
                         
-                        Марафоны и онлайн-игра проходит бесплатно и без отрыва от основной работы – всего пару часов вечером. На мини-курс уже
-                        стоит идти после марафона по HTML + CSS или с небольшим опытом в разработке.
-                        
-                        Как и курсы GoIT, все марафоны проходят с поддержкой менторов, которые помогут в решении заданий.</p>
+
                         <button type="button" class="button close-modal-button" data-modal-close><svg width="11" height="11"><use href="./Images/symbol-defs.svg#close-button"></use></svg></button>
                     </div>
                 </div>
@@ -276,7 +293,7 @@
             <form name="email-input" autocomplete="on" class="email-input-form">
                 <div class="email-input-box">
                     <label for="subscription">Подпишитесь на рассылку</label>
-                    <input type="email" id="subscription" placeholder="E-mail" class="email-input">
+                    <input type="email" id="subscription" placeholder="E-mail" class="footer-email-input">
                 </div>
 
                 <button type="submit" class="button send-button">Подписаться<svg class="send" width="24" height="24"><use href="./Images/icons.svg#send"></use></svg></button>
