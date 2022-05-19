@@ -900,8 +900,8 @@ h1, h2, h3, p, ul {
 
 .close-modal-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: -15px;
+    right: -15px;
     
     display: flex;
     width: 30px;
@@ -915,12 +915,16 @@ h1, h2, h3, p, ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 
-    transition: fill 250ms var(--timihg-function);
+    transition: box-shadow border-color fill 250ms var(--timihg-function);
 }
 
 .close-modal-button:hover,
 .close-modal-button:focus {
+    outline: none;
+    border-color: var(--button-active-color);
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
     fill: var(--button-active-color);
+
 }
 
 /* ------ form modal---- */
@@ -1079,7 +1083,9 @@ h1, h2, h3, p, ul {
 
 }
 
-.checkbox-marker:focus +.check {
+
+.checkbox-marker:focus +.check,
+.checkbox-marker:hover + .check {
     border-color: var(--button-active-color);
 }
 
