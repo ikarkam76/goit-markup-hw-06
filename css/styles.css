@@ -1083,9 +1083,11 @@ h1, h2, h3, p, ul {
 
 }
 
+.user-checkbox:hover .check {
+    border-color: var(--button-active-color);
+}
 
-.checkbox-marker:focus +.check,
-.checkbox-marker:hover + .check {
+.checkbox-marker:focus +.check {
     border-color: var(--button-active-color);
 }
 
