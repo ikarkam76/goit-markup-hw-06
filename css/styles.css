@@ -971,6 +971,7 @@ h1, h2, h3, p, ul {
 }
 
 .user-input:focus-within {
+    outline: none;
     border-color: var(--button-active-color);
 }
 
@@ -1005,6 +1006,7 @@ h1, h2, h3, p, ul {
 }
 
 .user-comment-input:focus-within {
+    outline: none;
     border-color: var(--button-active-color);
 }
 
@@ -1071,10 +1073,10 @@ h1, h2, h3, p, ul {
     margin-right: 7px;
 
     border: 2px solid;
-    border-radius: 4px;
+    border-radius: 2px;
     border-color: var(--header-secondary-logo-color);
 
-    transition: border-color background-color background-image  250ms var(--timihg-function);
+    transition: border-width border-color background-color background-image  250ms var(--timihg-function);
 
 }
 
@@ -1082,6 +1084,7 @@ h1, h2, h3, p, ul {
     background-color: var(--button-active-color);
     background-image: url(../Images/check.svg);
     background-position: center;
-    background-origin: border-box;
+    border-width: 1px;
     border-color: var(--button-active-color);
+    background-size: contain;
 }
